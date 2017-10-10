@@ -1,0 +1,84 @@
+var friends = 
+[
+{
+  "name":"Boris Badenov",
+  "photo":"https://static.comicvine.com/uploads/original/11/111746/4353053-boris.jpg",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+},
+{
+  "name":"Natasha Fatale",
+  "photo":"https://vignette.wikia.nocookie.net/villains/images/4/47/Natasha_Fatale_full.jpg/revision/latest?cb=20161013202123",
+  "scores":[
+      5,
+      5,
+      5,
+      5,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+},
+{
+  "name":"Rocky",
+  "photo":"http://s3.amazonaws.com/stripgenerator/strip/05/27/56/00/00/full.png",
+  "scores":[
+      3,
+      3,
+      5,
+      1,
+      3,
+      3,
+      1,
+      1,
+      4,
+      1
+    ]
+},
+{
+  "name":"Dudley",
+  "photo":"https://static.comicvine.com/uploads/square_medium/11/111746/4335924-latest.jpg",
+  "scores":[
+      1,
+      1,
+      1,
+      1,
+      5,
+      3,
+      1,
+      1,
+      4,
+      1
+    ]
+},
+{
+  "name":"Duckman",
+  "photo":"https://vignette2.wikia.nocookie.net/duckman/images/8/8a/Duckman.jpg/revision/latest?cb=20100903051959",
+  "scores":[
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+}
+];
+module.exports = friends;
