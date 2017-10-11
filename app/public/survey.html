@@ -41,11 +41,11 @@
                   <div class="form-group">
                     <label>I would rather have a root canal than write javascript.</label>
                     <select class="form-control" id="q1">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -167,24 +167,35 @@
 
     </div>
     <!-- <script type="text/javascript" src="script.js"/>-->
-    <script>
+    <script> 
+    var  tempc;
+    var tempi = 0;
+    var questions =["#q1","#q2","#q3","#q4","#q5","#q6","#q7","#q8","#q9","#q10"];
     var facts = {
        name: "",
        photo: "",
        scores: []
     }
     $('#button1').on("click",(function(event) { 
+     event.preventDefault();
     facts.name = $('#name').val().trim();
-    if (!facts.nameo) {
+    if (facts.nameo == "") {
       alert("name cannot be blank");
       return;
     }
-    facts.photo = $('#photo').val().trim();  
-    console.log("in click fnct");
-    console.log($('#q3').val());
+    facts.photo = $('#photo').val().trim(); 
+    if (facts.photo == "") {
+      alert("photo cannot be blank");
+      return;
+    } 
+    for (i=0;i<10;i++){
+      tempc = $(questions[i]).val().trim();
+      tempi = parseFloat(tempc);
+      facts.scores.push(tempi);
+      console.log(facts.scores[i]);
+    }
     console.log("name = " + facts.name);
     console.log("photo = " + facts.photo);
-    event.preventDefault();
       }));
     </script>  
   </body>
