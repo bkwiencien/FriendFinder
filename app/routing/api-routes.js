@@ -12,7 +12,7 @@ module.exports = function(app) {
     		photo: "test-photo",
     		diff:  100
     	};
-        res = best;
+        res.json(best);
         console.log("i was sent " + req);
     });
 
