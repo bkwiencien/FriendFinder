@@ -200,8 +200,6 @@
     }
     console.log("name = " + facts.name);
     console.log("photo = " + facts.photo);
-    var currentURL = window.location.origin;
-    console.log("currentURL = " + currentURL);
    // $.ajax({url:currentURL+"/api/data",method: "POST"})
    //   .done(function(data) {
    //     console.log("data = " + data);
@@ -215,7 +213,9 @@
         $("#match-image").attr("src",data.photo);
         console.log("show modal");
         $("#resmodal").modal('toggle');
-       // $("#resmodal").modal("toggle");
+        facts.name="";
+        facts.photo="";
+        facts.scores=[];
       });
       }));
     function initTheModal() {
