@@ -79,6 +79,22 @@ var friends =
       5,
       5
     ]
+},
+{
+  "name":"Pepe",
+  "photo":"https://vignette.wikia.nocookie.net/looneytunes/images/7/7a/Pepe-le-pew.jpg/revision/latest?cb=20110212211406",
+  "scores":[
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      5,
+      5
+    ]
 }
 ];
 module.exports = friends;

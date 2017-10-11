@@ -33,9 +33,6 @@ module.exports = function(app) {
           }  
          }
         res.json(best);
-        console.log("userTotal was " + userTotal);
-        console.log("i was sent " + req.param("name"));
-        console.log("i was also sent " + req.param("scores"));
     });
 
 }
