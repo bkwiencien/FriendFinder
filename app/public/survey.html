@@ -207,6 +207,10 @@
       $.post("/api/data", facts)
       .done(function(data) {
         console.log(data);
+        console.log(data.name);
+        $("#match-name").text(data.name);
+        $("#match-image").attr("src",data.photo);
+        $("#modal").modal;
       });
       }));
     </script>  
