@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="panel panel-default">
-            <div class="panel-heading" id="panel-top"> Personality Test</div>
+            <div class="panel-heading" id="panel-top"> Personality Test 1 implies strongly disagree, 5 implies strongly agree</div>
               <div class="panel-body">
                 <form>
                   <div class="form-group">
@@ -51,91 +51,91 @@
                   <div class="form-group">
                     <label>When I have free time, I go to the gym.</label>
                     <select class="form-control" id="q2">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>When I have free time, I read a book.</label>
                     <select class="form-control" id="q3">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>Dead baby jokes are funny.</label>
                     <select class="form-control" id="q4">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>I'm basically a geek.
                     <select class="form-control" id="q5">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>I watch a lot of television.</label>
                     <select class="form-control" id="q6">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>I like going to the beach.</label>
                     <select class="form-control" id="q7">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>I read 5 novels a year</label>
                     <select class="form-control" id="q8">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>I enjoy horror movies.</label>
                     <select class="form-control" id="q9">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>I always got good grades in school.</label>
                     <select class="form-control" id="q10">
-                      <option>1 (strongly disagree)</option>
+                      <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5 (strongly agree)</option>
+                      <option>5</option>
                     </select>
                   </div>
                 <!--  <input type="button" value="submit" class="btn btn-primary" id="button1"/> -->
@@ -168,11 +168,23 @@
     </div>
     <!-- <script type="text/javascript" src="script.js"/>-->
     <script>
-    $('#button1').on("click",(function(event) {
+    var facts = {
+       name: "",
+       photo: "",
+       scores: []
+    }
+    $('#button1').on("click",(function(event) { 
+    facts.name = $('#name').val().trim();
+    if (!facts.nameo) {
+      alert("name cannot be blank");
+      return;
+    }
+    facts.photo = $('#photo').val().trim();  
     console.log("in click fnct");
     console.log($('#q3').val());
+    console.log("name = " + facts.name);
+    console.log("photo = " + facts.photo);
     event.preventDefault();
-      console.log("handle submit");
       }));
     </script>  
   </body>
