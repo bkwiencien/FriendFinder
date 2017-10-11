@@ -13,7 +13,8 @@ module.exports = function(app) {
     		diff:  100
     	};
         res.json(best);
-        console.log("i was sent " + req);
+        console.log("i was sent " + req.param("name"));
+        console.log("i was also sent " + req.param("scores"));
     });
 
 }
