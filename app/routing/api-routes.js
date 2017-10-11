@@ -5,13 +5,15 @@ module.exports = function(app) {
     	res.json(friends);
     });	
 
-    app.post("api/data",function(req,res){
+    app.post("/api/data",function(req,res){
     	console.log("in post");
     	var best = {
-    		name: "",
-    		photo: "",
+    		name: "test-name",
+    		photo: "test-photo",
     		diff:  100
     	};
+        res = best;
+        console.log("i was sent " + req);
     });
 
 }
