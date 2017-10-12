@@ -95,6 +95,22 @@ var friends =
       5,
       5
     ]
-}
-];
+},
+{
+  "name":"Wilma",
+  "photo":"https://i.pinimg.com/736x/2e/9d/a8/2e9da83f10a9e4b51067795af8d24d7b--wilma-flintstone-animated-cartoons.jpg",
+  "scores":[
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  }
+  ]
 module.exports = friends;
